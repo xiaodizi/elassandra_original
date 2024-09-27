@@ -159,8 +159,8 @@ class VagrantTestPlugin implements Plugin<Project> {
     private static void configurePackagingArchiveRepositories(Project project) {
         RepositoryHandler repos = project.repositories
 
-        repos.jcenter() // will have releases before 5.0.0
-
+        repos.mavenCentral() // will have releases before 5.0.0
+        repos.google()
         /* Setup a repository that tries to download from
           https://artifacts.elastic.co/downloads/elasticsearch/[module]-[revision].[ext]
           which should work for 5.0.0+. This isn't a real ivy repository but gradle

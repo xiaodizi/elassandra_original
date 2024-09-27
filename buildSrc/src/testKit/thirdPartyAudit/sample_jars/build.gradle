@@ -3,6 +3,7 @@ plugins {
 }
 repositories {
     mavenCentral()
+    google()
 }
 dependencies {
     compile 'org.apache.logging.log4j:log4j-core:2.11.1'

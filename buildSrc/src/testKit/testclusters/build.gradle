@@ -16,7 +16,8 @@ allprojects { all ->
                 url "https://s3.amazonaws.com/download.elasticsearch.org/lucenesnapshots/" + luceneSnapshotRevision
             }
         }
-        jcenter()
+        mavenCentral()
+        google()
     }
 
     if (project == rootProject || project.name == "alpha" || project.name == "bravo") {
