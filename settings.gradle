@@ -17,6 +17,7 @@ List projects = [
   'benchmarks',
   'distribution:archives:zip',
   'distribution:archives:tar',
+  'distribution:archives:integ-test-zip',
   'distribution:packages:deb',
   'distribution:packages:rpm',
   'distribution:bwc:bugfix',

@@ -110,6 +110,9 @@ jar {
 
 repositories {
   jcenter()
+  maven {
+    url 'https://maven.aliyun.com/repository/public'
+  }
 }
 
 dependencies {

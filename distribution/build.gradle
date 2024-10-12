@@ -377,6 +377,10 @@ configure(subprojects.findAll { ['archives', 'packages'].contains(it.name) }) {
 
 }
 
+task run(type: RunTask) {
+  distribution = 'zip'
+}
+
 /**
  * Build some variables that are replaced in the packages. This includes both
  * scripts like bin/elasticsearch and bin/elasticsearch-plugin that a user might run and also
